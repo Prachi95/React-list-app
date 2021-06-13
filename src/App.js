@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import University from "./Components/University";
+import UniversityDetail from "./Components/UniversityDetail";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App-container">
+        <header className="App-data-container App-header">
+          <div className="App-header-title">Top Universities in India</div>
+        </header>
+        <main className="App-data-container App-main">
+          <Switch>
+            <Route path="/" exact component={University}></Route>
+            <Route path="/detail/:id" component={UniversityDetail}></Route>
+          </Switch>
+        </main>
+      </div>
+    </BrowserRouter>
+   
   );
 }
 

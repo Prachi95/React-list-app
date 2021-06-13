@@ -1,0 +1,70 @@
+
+/*University List Styles*/
+.university-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 1rem;
+    min-height: 2rem;
+}
+
+.university-list-left {
+    width: 80%;
+    text-align: left;
+}
+
+.university-list-right {
+    width: 15%;
+    text-align: left;
+}
+
+.university-list-header-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.university-list-left-title {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.university-list-right-title {
+    font-size: 1rem;
+    font-weight: 300;
+    color: gray;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
+
+.link:hover {
+    color: #0070c9;
+}
+
+/*University Details Styles*/
+.university-detail-header {
+    padding: 1rem;
+    border-bottom: 1px solid #d6d6d6;
+    min-height: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.university-detail-content{
+    margin: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.university-detail-img{
+    float: left;
+    height: auto;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 1rem 1rem 0;
+}
+
